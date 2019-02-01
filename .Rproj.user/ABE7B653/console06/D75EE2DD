@@ -8,3 +8,61 @@ Initialized empty Git repository in /Users/malishev/Documents/Data/harwell/.git/
 .git/       .gitignore  
 6300L-127771-M:harwell malishev$ open .gitignore 
 ]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git add . 
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git commit .
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   .Rproj.user/ABE7B653/console06/D75EE2DD[m
+	[32mnew file:   .Rproj.user/ABE7B653/console06/D75EE2DD.env[m
+	[32mnew file:   .Rproj.user/ABE7B653/console06/INDEX001[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/prop/3A2F62A8[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/prop/FB77F338[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/prop/INDEX[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/s-3B0F3C8F/9BB4B8CF-contents[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/s-3B0F3C8F/C6CB5173[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/s-3B0F3C8F/C6CB5173-contents[m
+	[32mnew file:   .Rproj.user/ABE7B653/sources/s-3B0F3C8F/lock_file[m
+	[32mnew file:   .Rproj.user/shared/notebooks/patch-chunk-names[m
+	[32mnew file:   .Rproj.user/shared/notebooks/paths[m
+	[32mnew file:   .gitignore[m
+	[32mnew file:   harwell_gift.R[m
+	[32mnew file:   snab_wavs.R[m
+	[32mnew file:   snab_wavs.Rproj[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/ABE7B653/console06/D75EE2DD[m
+	[31mmodified:   .Rproj.user/ABE7B653/console06/INDEX001[m
+
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git commi t0[K[K[Kt -m ''i'n'i't'
+[master (root-commit) 443cd0b] init
+ 16 files changed, 297 insertions(+)
+ create mode 100644 .Rproj.user/ABE7B653/console06/D75EE2DD
+ create mode 100644 .Rproj.user/ABE7B653/console06/D75EE2DD.env
+ create mode 100644 .Rproj.user/ABE7B653/console06/INDEX001
+ create mode 100644 .Rproj.user/ABE7B653/sources/prop/3A2F62A8
+ create mode 100644 .Rproj.user/ABE7B653/sources/prop/FB77F338
+ create mode 100644 .Rproj.user/ABE7B653/sources/prop/INDEX
+ create mode 100644 .Rproj.user/ABE7B653/sources/s-3B0F3C8F/9BB4B8CF-contents
+ create mode 100644 .Rproj.user/ABE7B653/sources/s-3B0F3C8F/C6CB5173
+ create mode 100644 .Rproj.user/ABE7B653/sources/s-3B0F3C8F/C6CB5173-contents
+ create mode 100644 .Rproj.user/ABE7B653/sources/s-3B0F3C8F/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 .gitignore
+ create mode 100644 harwell_gift.R
+ create mode 100644 snab_wavs.R
+ create mode 100644 snab_wavs.Rproj
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git add origin remote ""[C[C[C[C[C[C[C[C[C[K[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"r"e"m"o"t"e" "a"d"d" "o"r"i"g"i"n" "[C"h"t"t"p"s":"/"/"g"i"t"h"u"b"."c"o"m"/"d"a"r"w"i"n"a"n"d"d"a" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv""i"s"/"h"a"r"w"e"l"l";"2"D";"2"D"[1P"[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m 'init'[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktouch open[K[K[K[KREADME.me[K[Kmd
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ pen[K[K[Kopen README.md 
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git add .
