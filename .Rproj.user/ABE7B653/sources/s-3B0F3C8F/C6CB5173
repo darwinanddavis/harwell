@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2335792541",
+    "hash" : "0",
     "id" : "C6CB5173",
-    "lastKnownWriteTime" : 1549055927,
-    "last_content_update" : 1549055927481,
+    "lastKnownWriteTime" : 1549056066,
+    "last_content_update" : 1549056066017,
     "path" : "~/Documents/Data/harwell/snab_wavs.R",
     "project_path" : "snab_wavs.R",
     "properties" : {
-        "cursorPosition" : "54,11",
-        "scrollLine" : "40"
+        "cursorPosition" : "55,0",
+        "scrollLine" : "42"
     },
     "relative_order" : 1,
     "source_on_save" : false,
