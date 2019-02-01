@@ -1,0 +1,10 @@
+]0;~/Documents/Data/harwell[?1034h6300L-127771-M:harwell malishev$ [K6300L-127771-M:harwell malishev$ git init
+Initialized empty Git repository in /Users/malishev/Documents/Data/harwell/.git/
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ ls -a
+.		.Rproj.user	harwell_gift.R	snab_wavs.Rproj
+..		.git		snab_wavs.R
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ touch .gitignore
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ open .git
+.git/       .gitignore  
+6300L-127771-M:harwell malishev$ open .gitignore 
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git add . 
