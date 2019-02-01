@@ -47,18 +47,9 @@ snab_wav <- function(sound,vol,reps){
     }
 } # end function  
 
-# pull snab wav function
-script <- getURL("snab_wavs.R", ssl.verifypeer = FALSE)
-play_sound <- eval(parse(text = script))
-
 # now execute the above file 
 cat("\n\n",rep("-",30),"\nEnter number to represent sound file ( up to ",length(snab_wavs_list),") or '0' to play a random sound
     \nEnter the volume level (5 is average vol)
     \nEnter how many times you want the sound repeated\n"
     ,rep("-",30),
     "\n\n")
-
-# run below function 
-snab_wav(6,5,2) 
-
-
