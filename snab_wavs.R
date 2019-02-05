@@ -41,9 +41,10 @@ snab_wav <- function(sound,vol,reps){
   # reps <- 1 # no. of times to repeat sound
   if(sound==0){sound <- sample(length(snab_wavs_list),1)}
   if(sound==1){
-    play_file <- replicate(reps,{beep(rep_len(sample(11,1),1))})
+    play_file <- replicate(vol,{beep(rep(sound),reps)})#replicate(reps,{beep(rep_len(sample(11,1),1))})
+                 
     }else{
-    play_file <- replicate(reps,{beep(rep_len(snab_wavs_list[[sound]],1))})
+    play_file <- replicate(vol,{beep(rep(sound),reps)})#replicate(reps,{beep(rep_len(snab_wavs_list[[sound]],1))})
     }
 } # end function  
 

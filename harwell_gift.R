@@ -12,12 +12,21 @@
 # if too much time elapses (no one in office/good behaviour reward), turn off sound file
 # 7. the above reward system incentivises listening to the song in full for longer time periods. 
 # e.g. set.seed(10);plot(density(sample(10)));abline(v=0);set.seed(50);plot(density(sample(50)));abline(v=0)
-1/200
 
+packages <- c("RCurl","beepr")
+if(require(packages)){
+  install.packages(packages,dependencies = T)
+}
+ppp <- lapply(packages,require,character.only=T)
+if(any(ppp==F)){cbind(packages,ppp);cat("\n\n\n ---> Check packages are loaded properly <--- \n\n\n")}
 
 script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/snab_wavs.R", ssl.verifypeer = FALSE)
 eval(parse(text = script))
-snab_wav(1,8,1)
+snab_wav(1,10,)
+
+replicate(30,{beep(rep(4),10)})
+
+# testing space
 
 smashmouth_hour <- substr(format(Sys.time(), "%X")[1],1,2)
 if(Sys.time()==smashmouth_hour){print("It's SMASH TIME")}
