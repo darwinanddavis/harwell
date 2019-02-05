@@ -13,18 +13,18 @@
 # 7. the above reward system incentivises listening to the song in full for longer time periods. 
 # e.g. set.seed(10);plot(density(sample(10)));abline(v=0);set.seed(50);plot(density(sample(50)));abline(v=0)
 
-packages <- c("RCurl","beepr")
-if(require(packages)){
-  install.packages(packages,dependencies = T)
-}
-ppp <- lapply(packages,require,character.only=T)
-if(any(ppp==F)){cbind(packages,ppp);cat("\n\n\n ---> Check packages are loaded properly <--- \n\n\n")}
-
+# to put in target file 
+# opt 1 - for naked file
+packages <- c("RCurl","beepr"); if(require(packages)){install.packages(packages,dependencies = T)}; ppp <- lapply(packages,require,character.only=T); if(any(ppp==F)){cbind(packages,ppp);cat("\n\n\n ---> Check packages are loaded properly <--- \n\n\n")}
 script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/snab_wavs.R", ssl.verifypeer = FALSE)
 eval(parse(text = script))
-snab_wav(1,10,)
+# opt 2 - for files with 'packages' part  
+packages <- c("RCurl","beepr")
+script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/snab_wavs.R", ssl.verifypeer = FALSE)
+eval(parse(text = script))
 
-replicate(30,{beep(rep(4),10)})
+# run func
+snab_wav(6,1,2)
 
 # testing space
 
