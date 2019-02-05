@@ -41,12 +41,12 @@ snab_wav <- function(sound,vol,reps){
   # reps <- 1 # no. of times to repeat sound
   if(sound==0){sound <- sample(length(snab_wavs_list),1)}
   if(sound==1){
-    play_file <- replicate(vol,{beep(rep(sound),reps)})#replicate(reps,{beep(rep_len(sample(11,1),1))})
-                 
-    }else{
-    play_file <- replicate(vol,{beep(rep(sound),reps)})#replicate(reps,{beep(rep_len(snab_wavs_list[[sound]],1))})
-    }
+    play_file <- replicate(reps,{beep(sample(11),1)})#replicate(reps,{beep(rep_len(sample(11,1),1))})
+    }else{ 
+    play_file <- replicate(reps,{beep(rep(snab_wavs_list[[sound]]),vol)})
+    }            
 } # end function  
+
 
 # now execute the above file 
 # cat("\n\n",rep("-",30),"\nEnter number to represent sound file ( up to ",length(snab_wavs_list),") or '0' to play a random sound
