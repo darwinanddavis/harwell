@@ -33,10 +33,6 @@ harwell(7,1,2)
 
 
 
-
-
-
-
 # testing space
 
 # smashmouth_hour <- substr(format(Sys.time(), "%X")[1],1,2)

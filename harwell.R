@@ -44,7 +44,7 @@ harwell <- function(sound,vol,reps){
     play_file <- replicate(reps,{beep(sample(11),1)})#replicate(reps,{beep(rep_len(sample(11,1),1))})
     }else{ 
     play_file <- replicate(reps,{beep(rep(snab_wavs_list[[sound]]),vol)})
-    }            
+    }
 } # end function  
 
 
