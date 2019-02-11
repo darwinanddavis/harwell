@@ -20,7 +20,7 @@ if(any(ppp==F)){cbind(packages,ppp);cat("\n\n\n ---> Check packages are loaded p
 # 5. pull online file into R
 # 6. embed code in R to play sound file 
 
-snab_wav <- function(sound,vol,reps){
+harwell <- function(sound,vol,reps){
   snab_wavs_list <- list( # 1 = random default pck sound 
     "http://www.pacdv.com/sounds/voices/oh-my-god-1.wav", # omg
     "http://www.pacdv.com/sounds/voices/okay-2.wav", # OK
