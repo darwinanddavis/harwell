@@ -24,13 +24,24 @@ script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/maste
 eval(parse(text = script))
 
 # run func
-harwell(2,1,2)
+harwell(7,1,2)
+
+
+
+
+
+
+
+
+
+
+
 
 # testing space
 
-smashmouth_hour <- substr(format(Sys.time(), "%X")[1],1,2)
-if(Sys.time()==smashmouth_hour){print("It's SMASH TIME")}
-as.POSIXct(smashmouth_hour)
-
-format(Sys.time(), "%a %b %d %X %Y")
-substr(format(Sys.time(), "%X")[1],1,2)
+# smashmouth_hour <- substr(format(Sys.time(), "%X")[1],1,2)
+# if(Sys.time()==smashmouth_hour){print("It's SMASH TIME")}
+# as.POSIXct(smashmouth_hour)
+# 
+# format(Sys.time(), "%a %b %d %X %Y")
+# substr(format(Sys.time(), "%X")[1],1,2)
