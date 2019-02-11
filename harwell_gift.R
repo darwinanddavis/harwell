@@ -16,11 +16,11 @@
 # to put in target file 
 # opt 1 - for naked file
 packages <- c("RCurl","beepr"); if(require(packages)){install.packages(packages,dependencies = T)}; ppp <- lapply(packages,require,character.only=T); if(any(ppp==F)){cbind(packages,ppp);cat("\n\n\n ---> Check packages are loaded properly <--- \n\n\n")}
-script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/snab_wavs.R", ssl.verifypeer = FALSE)
+script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/harwell.R", ssl.verifypeer = FALSE)
 eval(parse(text = script))
 # opt 2 - for files with 'packages' scipt at beginning of R file 
 packages <- c("RCurl","beepr")
-script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/snab_wavs.R", ssl.verifypeer = FALSE)
+script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/master/harwell.R", ssl.verifypeer = FALSE)
 eval(parse(text = script))
 
 # run func
