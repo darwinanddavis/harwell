@@ -303,3 +303,42 @@ remote: Resolving deltas:   0% (0/4)   [Kremote: Resolving deltas:  25% (1/4) 
 To https://github.com/darwinanddavis/harwell
    980bb63..6b7d2cc  master -> master
 git add .
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ it[K[Kgit status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .Rhistory[m
+	[32mmodified:   .Rproj.user/ABE7B653/console06/D75EE2DD[m
+	[32mmodified:   .Rproj.user/ABE7B653/console06/D75EE2DD.env[m
+	[32mmodified:   .Rproj.user/ABE7B653/console06/INDEX001[m
+	[32mmodified:   .Rproj.user/ABE7B653/sources/prop/FB77F338[m
+	[32mnew file:   as_exp.wav[m
+	[32mmodified:   harwell.R[m
+	[32mmodified:   harwell_gift.R[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/ABE7B653/console06/D75EE2DD[m
+
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git commit 0[K-m ''a'd'd' 'a's'_'e'x'p'
+[master 8773315] add as_exp
+ 8 files changed, 42 insertions(+), 30 deletions(-)
+ rewrite .Rproj.user/ABE7B653/console06/INDEX001 (85%)
+ create mode 100644 as_exp.wav
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git commit -m 'add as_exp'status[K[1Padd .[1Ppush
+Counting objects: 15, done.
+Delta compression using up to 4 threads.
+Compressing objects:   7% (1/14)   Compressing objects:  14% (2/14)   Compressing objects:  21% (3/14)   Compressing objects:  28% (4/14)   Compressing objects:  35% (5/14)   Compressing objects:  42% (6/14)   Compressing objects:  50% (7/14)   Compressing objects:  57% (8/14)   Compressing objects:  64% (9/14)   Compressing objects:  71% (10/14)   Compressing objects:  78% (11/14)   Compressing objects:  85% (12/14)   Compressing objects:  92% (13/14)   Compressing objects: 100% (14/14)   Compressing objects: 100% (14/14), done.
+Writing objects:   6% (1/15)   Writing objects:  13% (2/15)   Writing objects:  20% (3/15)   Writing objects:  26% (4/15)   Writing objects:  33% (5/15)   Writing objects:  40% (6/15)   Writing objects:  46% (7/15)   Writing objects:  53% (8/15)   Writing objects:  60% (9/15)   Writing objects:  66% (10/15)   Writing objects:  73% (11/15)   Writing objects:  80% (12/15)   Writing objects:  86% (13/15), 2.41 MiB | 4.72 MiB/s   Writing objects:  93% (14/15), 2.41 MiB | 4.72 MiB/s   Writing objects: 100% (15/15), 2.41 MiB | 4.72 MiB/s   Writing objects: 100% (15/15), 4.05 MiB | 4.72 MiB/s, done.
+Total 15 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/darwinanddavis/harwell
+   6b7d2cc..8773315  master -> master
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git remote -v
+origin	https://github.com/darwinanddavis/harwell (fetch)
+origin	https://github.com/darwinanddavis/harwell (push)
+]0;~/Documents/Data/harwell6300L-127771-M:harwell malishev$ git add .

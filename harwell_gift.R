@@ -24,7 +24,9 @@ script <- getURL("https://raw.githubusercontent.com/darwinanddavis/harwell/maste
 eval(parse(text = script))
 
 # run func
-harwell(7,1,2)
+harwell(7,1,1)
+
+
 
 
 
