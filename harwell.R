@@ -36,6 +36,8 @@ harwell <- function(sound,vol,reps){
     "http://www.pacdv.com/sounds/voices/who-are-you.wav", # who are you
     "http://www.pacdv.com/sounds/voices/have-a-good-weekend.wav" # weekend
   )
+  as_wd <- "C:/Rdata/"
+  as_list <- list.files(as_wd,pattern="*.wav")
   # sound <- length(snab_wavs_list)
   # vol <- 5 # !!! 5 = loud! 
   # reps <- 1 # no. of times to repeat sound
@@ -43,10 +45,12 @@ harwell <- function(sound,vol,reps){
   if(sound==1){
     play_file <- replicate(reps,{beep(sample(11),1)})#replicate(reps,{beep(rep_len(sample(11,1),1))})
     }else{ 
-    play_file <- replicate(reps,{beep(rep(snab_wavs_list[[sound]]),vol)})
+    play_file <- replicate(reps,{beep(rep(snab_wavs_list[[sound]]),vol)}) # normal indexing from snab_wavs_list
     }
+  if(sound==""){
+    play_file <- replicate(reps,{beep(rep(sample(paste0(as_wd,as_list),1)),vol)}) # normal indexing from snab_wavs_list
+  }
 } # end function  
-
 
 # now execute the above file 
 # cat("\n\n",rep("-",30),"\nEnter number to represent sound file ( up to ",length(snab_wavs_list),") or '0' to play a random sound

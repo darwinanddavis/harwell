@@ -25,10 +25,7 @@ eval(parse(text = script))
 
 # run func
 harwell(7,1,1)
-
-
-
-
+harwell("",1,1)
 
 
 
